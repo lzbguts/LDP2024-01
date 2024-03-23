@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+</head>
+
+<body>
+  <form action="https://www.w3schools.com/action_page.php" method="post" style="width: 50%;">
+    <input type="date" name="data" id="data"> <br>
+
+    <fieldset>
+      <legend>Dados de acesso</legend>
+      <input type="text" name="usuario" id="usuario" placeholder="Usuário"> <br>
+      <input type="password" name="senha" id="senha" placeholder="Senha">
+    </fieldset> <br>
+
+    <fieldset>
+      <legend>Dados pessoais</legend>
+      <input type="text" name="nome" id="nome" placeholder="Nome"> <br>
+      <input type="text" name="endereco" id="endereco" placeholder="Endereço"> <br>
+      <input type="number" name="numero" id="numero" placeholder="Número"> <br>
+      <input type="text" name="complemento" id="complemento" placeholder="Complemento"> <br>
+
+      <input list="cidades" name="cidade" id="cidade" placeholder="Cidade">
+      <datalist id="cidades">
+        <option value="Araçoiaba da Serra">
+        <option value="Itu">
+        <option value="Piedade">
+        <option value="Salto de Pirapora">
+        <option value="São Paulo">
+        <option value="Sorocaba">
+      </datalist> <br>
+
+      <select name="estado" id="estado">
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="ES">Espírito Santo</option>
+        <option value="GO">Goiás</option>
+        <option value="MA">Maranhão</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PA">Pará</option>
+        <option value="PB">Paraíba</option>
+        <option value="PR">Paraná</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RO">Rondônia</option>
+        <option value="RR">Roraima</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+        <option value="SE">Sergipe</option>
+        <option value="TO">Tocantins</option>
+      </select> <br>
+
+      <input type="text" name="cep" id="cep" placeholder="CEP"> <br>
+    </fieldset> <br>
+
+    <fieldset>
+      <legend>Gênero</legend>
+      <input type="radio" name="genero" id="masculino" value="masculino">
+      <label for="masculino">Masculino</label> <br>
+      <input type="radio" name="genero" id="feminino" value="feminino">
+      <label for="feminino">Feminino</label> <br>
+      <input type="radio" name="genero" id="prefironaofalar" value="prefironaofalar">
+      <label for="prefironaofalar">Prefiro não falar</label> <br>
+    </fieldset> <br>
+
+    <fieldset>
+      <legend>Curso</legend>
+      <input type="checkbox" name="ads" id="ads" value="true">
+      <label for="ads">ADS</label> <br>
+      <input type="checkbox" name="jogos" id="jogos" value="true">
+      <label for="jogos">Jogos</label> <br>
+      <input type="checkbox" name="gestaodeti" id="gestaodeti" value="true">
+      <label for="gestaodeti">Gestão de TI</label> <br>
+      <input type="checkbox" name="bancodedados" id="bancodedados" value="true">
+      <label for="bancodedados">Banco de Dados</label> <br>
+    </fieldset> <br>
+
+    <fieldset>
+      <legend>Modelo</legend>
+      <input type="radio" name="modelo" id="presencial" value="presencial">
+      <label for="presencial">Presencial</label> <br>
+      <input type="radio" name="modelo" id="ead" value="ead">
+      <label for="ead">EAD</label> <br>
+      <input type="radio" name="modelo" id="semipresencial" value="semipresencial">
+      <label for="semipresencial">Semi Presencial</label> <br>
+    </fieldset>
+
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+
+</html>
